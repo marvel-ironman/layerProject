@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="19714" started-at="2019-10-18T12:09:51 EEST" finished-at="2019-10-18T12:10:10 EEST">
+  <suite name="Command line suite" duration-ms="16079" started-at="2019-10-18T16:52:43 EEST" finished-at="2019-10-18T16:52:59 EEST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="19714" started-at="2019-10-18T12:09:51 EEST" finished-at="2019-10-18T12:10:10 EEST">
+    <test name="Command line test" duration-ms="16079" started-at="2019-10-18T16:52:43 EEST" finished-at="2019-10-18T16:52:59 EEST">
       <class name="MainTest">
-        <test-method status="PASS" signature="startMethod()[pri:0, instance:MainTest@91161c7]" name="startMethod" is-config="true" duration-ms="4691" started-at="2019-10-18T12:09:51 EEST" finished-at="2019-10-18T12:09:55 EEST">
+        <test-method status="PASS" signature="startMethod()[pri:0, instance:MainTest@91161c7]" name="startMethod" is-config="true" duration-ms="4281" started-at="2019-10-18T16:52:43 EEST" finished-at="2019-10-18T16:52:47 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="mouseOverTest()[pri:0, instance:MainTest@91161c7]" name="mouseOverTest" duration-ms="4641" started-at="2019-10-18T12:09:55 EEST" finished-at="2019-10-18T12:10:00 EEST">
+        <test-method status="PASS" signature="mouseOverTest()[pri:0, instance:MainTest@91161c7]" name="mouseOverTest" duration-ms="4485" started-at="2019-10-18T16:52:47 EEST" finished-at="2019-10-18T16:52:52 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseOverTest -->
-        <test-method status="PASS" signature="textTest()[pri:0, instance:MainTest@91161c7]" name="textTest" duration-ms="7056" started-at="2019-10-18T12:10:00 EEST" finished-at="2019-10-18T12:10:07 EEST">
+        <test-method status="PASS" signature="textTest()[pri:0, instance:MainTest@91161c7]" name="textTest" duration-ms="4824" started-at="2019-10-18T16:52:52 EEST" finished-at="2019-10-18T16:52:57 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textTest -->
-        <test-method status="PASS" signature="newWindowOpenTest()[pri:1, instance:MainTest@91161c7]" name="newWindowOpenTest" duration-ms="2168" started-at="2019-10-18T12:10:07 EEST" finished-at="2019-10-18T12:10:09 EEST">
+        <test-method status="PASS" signature="newWindowOpenTest()[pri:1, instance:MainTest@91161c7]" name="newWindowOpenTest" duration-ms="1590" started-at="2019-10-18T16:52:57 EEST" finished-at="2019-10-18T16:52:58 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newWindowOpenTest -->
-        <test-method status="PASS" signature="clearDown()[pri:0, instance:MainTest@91161c7]" name="clearDown" is-config="true" duration-ms="1089" started-at="2019-10-18T12:10:09 EEST" finished-at="2019-10-18T12:10:10 EEST">
+        <test-method status="PASS" signature="clearDown()[pri:0, instance:MainTest@91161c7]" name="clearDown" is-config="true" duration-ms="832" started-at="2019-10-18T16:52:58 EEST" finished-at="2019-10-18T16:52:59 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearDown -->
