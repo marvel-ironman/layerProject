@@ -27,7 +27,7 @@ public class MainTest {
 
     @Test
     public void textTest(){
-        Assert.assertEquals(text.typeRemoveTextInGoogleSearch(),selenText);
+        Assert.assertEquals(text.typeRemoveTextInGoogleSearch(),"selenium - Поиск в Google");
     }
 
     @Test(priority = 1)
