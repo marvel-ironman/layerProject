@@ -15,6 +15,7 @@ public class MainTest {
     private WorkText text=null;
     private WorkMouse mouse=null;
     private WorkWindow window=null;
+    private String selenText = "selenium - Поиск в Google";
 
 
     @BeforeClass
@@ -26,7 +27,7 @@ public class MainTest {
 
     @Test
     public void textTest(){
-        Assert.assertEquals(text.typeRemoveTextInGoogleSearch(),"selenium - Поиск в Google");
+        Assert.assertEquals(text.typeRemoveTextInGoogleSearch(),selenText);
     }
 
     @Test(priority = 1)
