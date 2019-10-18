@@ -8,6 +8,7 @@ public class WorkWindow {
     private TextClass textClass;
     private MouseClass mouseClass;
     private WindowClass windowClass;
+    private String urlGitGub = "https://github.com/";
 
     public WorkWindow() {
         this.textClass = new TextClass();
@@ -16,7 +17,7 @@ public class WorkWindow {
     }
 
     public int openNewWindowCheak(){
-        windowClass.openNewWindow("https://github.com/");
+        windowClass.openNewWindow(urlGitGub);
         return windowClass.getWindowHands().size();
     }
 

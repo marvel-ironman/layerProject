@@ -8,6 +8,10 @@ public class WorkText {
     private TextClass textClass;
     private MouseClass mouseClass;
     private WindowClass windowClass;
+    private String urlGoogle = "https://www.google.com.ua";
+    private By searchLocator = By.name("q");
+    private String wrongText = "seleno";
+    private String validText = "selenium";
 
     public WorkText() {
         this.textClass = new TextClass();
@@ -16,11 +20,11 @@ public class WorkText {
     }
 
     public String typeRemoveTextInGoogleSearch(){
-        textClass.goToUrl("https://www.google.com.ua");
-        textClass.typeText(By.name("q"),"seleno");
-        textClass.deleteText(By.name("q"));
-        textClass.typeText(By.name("q"),"selenium");
-        mouseClass.submitClick(By.name("q"));
+        textClass.goToUrl(urlGoogle);
+        textClass.typeText(searchLocator,wrongText);
+        textClass.deleteText(searchLocator);
+        textClass.typeText(searchLocator,validText);
+        mouseClass.submitClick(searchLocator);
         return windowClass.getTitle();
     }
 
