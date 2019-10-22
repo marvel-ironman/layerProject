@@ -51,7 +51,7 @@ public class MainTest {
     }
 
     @Feature(value = "Wrong")
-    @Test(description = "Test with error")
+    @Test(priority = 2,description = "Test with error")
     @Severity(value = SeverityLevel.TRIVIAL)
     public void wrongTest(){
         Assert.assertEquals(2+2,5);
