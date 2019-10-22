@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="16079" started-at="2019-10-18T16:52:43 EEST" finished-at="2019-10-18T16:52:59 EEST">
+  <suite name="Surefire suite" duration-ms="49258" started-at="2019-10-22T09:32:37 EEST" finished-at="2019-10-22T09:33:26 EEST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="16079" started-at="2019-10-18T16:52:43 EEST" finished-at="2019-10-18T16:52:59 EEST">
+    <test name="Surefire test" duration-ms="49258" started-at="2019-10-22T09:32:37 EEST" finished-at="2019-10-22T09:33:26 EEST">
       <class name="MainTest">
-        <test-method status="PASS" signature="startMethod()[pri:0, instance:MainTest@91161c7]" name="startMethod" is-config="true" duration-ms="4281" started-at="2019-10-18T16:52:43 EEST" finished-at="2019-10-18T16:52:47 EEST">
+        <test-method status="PASS" signature="startMethod()[pri:0, instance:MainTest@fb9c7aa]" name="startMethod" is-config="true" duration-ms="13013" started-at="2019-10-22T09:32:37 EEST" finished-at="2019-10-22T09:32:50 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="mouseOverTest()[pri:0, instance:MainTest@91161c7]" name="mouseOverTest" duration-ms="4485" started-at="2019-10-18T16:52:47 EEST" finished-at="2019-10-18T16:52:52 EEST">
+        <test-method status="PASS" signature="mouseOverTest()[pri:0, instance:MainTest@fb9c7aa]" name="mouseOverTest" duration-ms="20841" started-at="2019-10-22T09:32:50 EEST" finished-at="2019-10-22T09:33:11 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseOverTest -->
-        <test-method status="PASS" signature="textTest()[pri:0, instance:MainTest@91161c7]" name="textTest" duration-ms="4824" started-at="2019-10-18T16:52:52 EEST" finished-at="2019-10-18T16:52:57 EEST">
+        <test-method status="PASS" signature="textTest()[pri:0, instance:MainTest@fb9c7aa]" name="textTest" duration-ms="11884" started-at="2019-10-22T09:33:11 EEST" finished-at="2019-10-22T09:33:23 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textTest -->
-        <test-method status="PASS" signature="newWindowOpenTest()[pri:1, instance:MainTest@91161c7]" name="newWindowOpenTest" duration-ms="1590" started-at="2019-10-18T16:52:57 EEST" finished-at="2019-10-18T16:52:58 EEST">
+        <test-method status="PASS" signature="newWindowOpenTest()[pri:1, instance:MainTest@fb9c7aa]" name="newWindowOpenTest" duration-ms="1948" started-at="2019-10-22T09:33:23 EEST" finished-at="2019-10-22T09:33:25 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newWindowOpenTest -->
-        <test-method status="PASS" signature="clearDown()[pri:0, instance:MainTest@91161c7]" name="clearDown" is-config="true" duration-ms="832" started-at="2019-10-18T16:52:58 EEST" finished-at="2019-10-18T16:52:59 EEST">
+        <test-method status="PASS" signature="clearDown()[pri:0, instance:MainTest@fb9c7aa]" name="clearDown" is-config="true" duration-ms="992" started-at="2019-10-22T09:33:25 EEST" finished-at="2019-10-22T09:33:26 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearDown -->
       </class> <!-- MainTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
