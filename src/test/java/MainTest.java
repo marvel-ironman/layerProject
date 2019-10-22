@@ -4,6 +4,10 @@ import businessLogicLayer.WorkWindow;
 import domainLayer.MouseClass;
 import domainLayer.TextClass;
 import domainLayer.WindowClass;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -25,17 +29,23 @@ public class MainTest {
         window = new WorkWindow();
     }
 
+    @Feature(value = "Работа с текстом")
     @Test
+    @Severity(value = SeverityLevel.MINOR)
     public void textTest(){
-        Assert.assertEquals(text.typeRemoveTextInGoogleSearch(),"selenium - Поиск в Google");
+        Assert.assertEquals(text.typeRemoveTextInGoogleSearch(),selenText);
     }
 
+    @Feature(value = "Работа с окнами")
     @Test(priority = 1)
+    @Severity(value = SeverityLevel.BLOCKER)
     public void newWindowOpenTest(){
         Assert.assertEquals(window.openNewWindowCheak(),2);
     }
 
+    @Feature(value = "Работа с мышкой")
     @Test
+    @Severity(value = SeverityLevel.TRIVIAL)
     public void mouseOverTest(){
         Assert.assertTrue(mouse.mouseOverCheak());
     }
