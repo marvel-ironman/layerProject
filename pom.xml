@@ -41,7 +41,7 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
-            <version>2.12.0</version>
+            <version>${allure-testng.version}</version>
         </dependency>
 </dependencies>
 
@@ -61,7 +61,7 @@
                         </property>
                         <property>
                             <name>allure.results.directory</name>
-                            <value>C:\Program Files (x86)\Jenkins\workspace\FirstProject\allure-results</value>
+                            <value>C:\Program Files (x86)\Jenkins\workspace\vgh\allure-results</value>
                         </property>
                     </systemProperties>
                 </configuration>
@@ -81,8 +81,6 @@
                     <reportVersion>2.6.0</reportVersion>
                 </configuration>
             </plugin>
-
-
 
         </plugins>
     </build>

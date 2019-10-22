@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 22 09:32:37 EEST 2019</td>
+<td>Started on:</td><td>Tue Oct 22 14:42:04 EEST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>49 seconds (49258 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11650 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,81 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MainTest.mouseOverTest()'><b>mouseOverTest</b><br>Test class: MainTest<br>Test method: Наводим мышкой на меню</td>
+<td><div><pre>io.qameta.allure.AllureResultsWriteException: Could not write Allure test result
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:43)
+	at io.qameta.allure.AllureLifecycle.lambda$writeTestCase$12(AllureLifecycle.java:197)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at io.qameta.allure.AllureLifecycle.writeTestCase(AllureLifecycle.java:195)
+	at io.qameta.allure.testng.AllureTestNg.onTestSuccess(AllureTestNg.java:250)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: java.nio.file.AccessDeniedException: C:\Program Files (x86)\Jenkins\workspace\vgh\allure-results\10d814c5-1198-433d-b75b-785189b054df-result.json
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:434)
+	at java.nio.file.Files.newOutputStream(Files.java:216)
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:40)
+	... 34 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace488928549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace488928549'><pre>io.qameta.allure.AllureResultsWriteException: Could not write Allure test result
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:43)
+	at io.qameta.allure.AllureLifecycle.lambda$writeTestCase$12(AllureLifecycle.java:197)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at io.qameta.allure.AllureLifecycle.writeTestCase(AllureLifecycle.java:195)
+	at io.qameta.allure.testng.AllureTestNg.onTestSuccess(AllureTestNg.java:250)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:70)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:210)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:638)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+Caused by: java.nio.file.AccessDeniedException: C:\Program Files (x86)\Jenkins\workspace\vgh\allure-results\10d814c5-1198-433d-b75b-785189b054df-result.json
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:434)
+	at java.nio.file.Files.newOutputStream(Files.java:216)
+	at io.qameta.allure.FileSystemResultsWriter.write(FileSystemResultsWriter.java:40)
+	... 34 more
+</pre></div></td>
+<td>6</td>
+<td>MainTest@2bd2b28e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,20 +150,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='MainTest.mouseOverTest()'><b>mouseOverTest</b><br>Test class: MainTest</td>
+<td title='MainTest.mouseOverTest()'><b>mouseOverTest</b><br>Test class: MainTest<br>Test method: Наводим мышкой на меню</td>
 <td></td>
-<td>20</td>
-<td>MainTest@fb9c7aa</td></tr>
-<tr>
-<td title='MainTest.newWindowOpenTest()'><b>newWindowOpenTest</b><br>Test class: MainTest</td>
-<td></td>
-<td>1</td>
-<td>MainTest@fb9c7aa</td></tr>
-<tr>
-<td title='MainTest.textTest()'><b>textTest</b><br>Test class: MainTest</td>
-<td></td>
-<td>11</td>
-<td>MainTest@fb9c7aa</td></tr>
+<td>6</td>
+<td>MainTest@2bd2b28e</td></tr>
 </table><p>
 </body>
 </html>
