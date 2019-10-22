@@ -50,7 +50,12 @@ public class MainTest {
         Assert.assertTrue(mouse.mouseOverCheak());
     }
 
-
+    @Feature(value = "Wrong")
+    @Test(description = "Test with error")
+    @Severity(value = SeverityLevel.TRIVIAL)
+    public void wrongTest(){
+        Assert.assertEquals(2+2,5);
+    }
 
     @AfterClass
     public void clearDown(){
