@@ -59,6 +59,10 @@
                             <name>allure.results.directory</name>
                             <value>${project.build.directory}/allure-results</value>
                         </property>
+                        <property>
+                            <name>allure.results.directory</name>
+                            <value>C:\Program Files (x86)\Jenkins\workspace\FirstProject\allure-results</value>
+                        </property>
                     </systemProperties>
                 </configuration>
                 <dependencies>
