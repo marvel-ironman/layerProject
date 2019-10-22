@@ -30,21 +30,21 @@ public class MainTest {
     }
 
     @Feature(value = "Работа с текстом")
-    @Test
+    @Test(description = "Ввод текста в поисковик Google")
     @Severity(value = SeverityLevel.MINOR)
     public void textTest(){
         Assert.assertEquals(text.typeRemoveTextInGoogleSearch(),selenText);
     }
 
     @Feature(value = "Работа с окнами")
-    @Test(priority = 1)
+    @Test(priority = 1, description = "В новой вкладке открывает гитхаб")
     @Severity(value = SeverityLevel.BLOCKER)
     public void newWindowOpenTest(){
         Assert.assertEquals(window.openNewWindowCheak(),2);
     }
 
     @Feature(value = "Работа с мышкой")
-    @Test
+    @Test(description = "Наводим мышкой на меню")
     @Severity(value = SeverityLevel.TRIVIAL)
     public void mouseOverTest(){
         Assert.assertTrue(mouse.mouseOverCheak());
