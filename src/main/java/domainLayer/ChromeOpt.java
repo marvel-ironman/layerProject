@@ -8,6 +8,8 @@ public class ChromeOpt {
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         options.addArguments("start-maximized");
+        //options.addArguments("--headless");
+        //options.setHeadless(true);
         return options;
     }
 }

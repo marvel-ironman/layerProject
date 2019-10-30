@@ -1,21 +1,16 @@
 import businessLogicLayer.WorkMouse;
 import businessLogicLayer.WorkText;
 import businessLogicLayer.WorkWindow;
-import domainLayer.MouseClass;
-import domainLayer.TextClass;
-import domainLayer.WindowClass;
-import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class MainTest {
+public class MainTest  {
     private WorkText text=null;
     private WorkMouse mouse=null;
     private WorkWindow window=null;

@@ -27,7 +27,8 @@ public class WebElementClass extends DriverClass{
 
     @Step(value = "Go to {url}")
     public void goTo(String url){
-        getWebDriver().get(url);
+        getWebDriver().navigate().to(url);
+        wait.until(ExpectedConditions.jsReturnsValue("return document.readyState==\"complete\";"));
     }
 
 }

@@ -60,7 +60,7 @@ public class MainClass {
 
 
         TextClass text = new TextClass();
-        text.goToUrl("https://www.google.com.ua");
+        text.goTo("https://www.google.com.ua");
         text.typeText(By.name("q"),"selenium");
 
         WindowClass window = new WindowClass();

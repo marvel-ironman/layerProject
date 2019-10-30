@@ -20,7 +20,7 @@ public class WorkText {
     }
 
     public String typeRemoveTextInGoogleSearch(){
-        textClass.goToUrl(urlGoogle);
+        textClass.goTo(urlGoogle);
         textClass.typeText(searchLocator,wrongText);
         textClass.deleteText(searchLocator);
         textClass.typeText(searchLocator,validText);

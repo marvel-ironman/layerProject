@@ -10,16 +10,9 @@ public class TextClass extends WebElementClass{
         getElement(locator).sendKeys(text);
     }
 
+    @Step(value = "Delete text with locator: {locator}")
     public void deleteText(By locator){
         getElement(locator).clear();
     }
-
-    @Step(value = "Go to {url}")
-    public void goToUrl(String url){
-        goTo(url);
-    }
-
-
-
 
 }
